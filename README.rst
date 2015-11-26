@@ -8,6 +8,7 @@ Markdown Bugzilla Extension
 
 This is Markdown extension for faster linking to Bugzilla bugs.
 
+```
     md = Markdown(extensions=['mdbz'], 
                   extension_configs={
                     'mdbz' : {
@@ -17,6 +18,7 @@ This is Markdown extension for faster linking to Bugzilla bugs.
                 )
 
     md = Markdown(extensions=['mdbz.rhbz'])
+```
 
 then strings of the form `[bz#123]` will become links to the specified bug number.
 The `mdbz.rhbz` extension is preconfigured for Red Hat's Bugzilla and
